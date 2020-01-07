@@ -12,5 +12,9 @@
             $this->_sql->bindParam(':pass', $this->_record->getHashedPass());
             $this->_sql->bindParam(':email', $this->_record->getEmail());
         }
+
+        public function getSql() {
+            return $this->_sql;
+        }
     }
 ?>

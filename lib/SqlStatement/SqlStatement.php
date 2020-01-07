@@ -5,12 +5,14 @@
         private $_pdo;
         private $_executeSuccess;
         private $_dataArray;
+        protected $_record;
 
         public function __construct($linkToDb, $record) {
             $this->_pdoStatement = null;
             $this->_pdo = $linkToDb->getPdo();
             $this->_executeSuccess = '';
             $this->_dataArray = [];
+            $this->_record = $record;
         }
 
         public function getExecuteSuccess() {

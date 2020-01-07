@@ -19,6 +19,8 @@
             $this->_sqlStatementSignUp->bindParam();
             $this->_sqlStatementSignUp->execute();
             $this->_success = $this->_sqlStatementSignUp->getExecuteSuccess();
+            debug($this->_success);
+            die('1');
         }
     }
 ?>
