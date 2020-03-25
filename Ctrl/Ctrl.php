@@ -3,7 +3,6 @@
         public static function routes() {
             switch ($_GET['page']) {
                 case 'signUp':
-                    die('stop');
                     $ctrl = new CtrlSignUp();
                 break;
                 case 'signIn':
@@ -17,7 +16,7 @@
                 break;
                 default:
                     $ctrl = new CtrlIndex();
-            break;
+                break;
             }
             return $ctrl;
         }

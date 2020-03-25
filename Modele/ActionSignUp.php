@@ -6,7 +6,6 @@
         private $_success;
 
         public function __construct($email, $password) {
-          //  $this->_sqlStatementSignUp = new SqlStatementSignUp();
             $this->_linkToDb = new ConnectToDb();
             $this->_linkToDb->connectToDb();
             $this->_record = new DataUserRecord(null, $password, $email);
@@ -20,7 +19,6 @@
             $this->_sqlStatementSignUp->execute();
             $this->_success = $this->_sqlStatementSignUp->getExecuteSuccess();
             debug($this->_success);
-            die('1');
         }
     }
 ?>

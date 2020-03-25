@@ -1,6 +1,5 @@
 <?php
     class SqlStatementSignUp extends SqlStatement {
-        private $_sql;
 
         public function __construct($linkToDb, $record) {
             parent::__construct($linkToDb, $record);

@@ -10,9 +10,7 @@
     require_once 'lib/connectToDb.php';
     require_once 'lib/SqlStatement/SqlStatement.php';
     require_once 'lib/SqlStatement/SqlStatementSignUp.php';
-    die('3');
     require_once 'Modele/ActionInstallDb.php';
-    die('4');
     require_once 'Modele/ActionSignUp.php';
     require_once 'Ctrl/Ctrl.php';
     require_once 'Ctrl/CtrlInstallDb.php';
